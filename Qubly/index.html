@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com"> <!--google sign up-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/head/logo.ico" type="image/x-icon" />
     <title>Quibly</title>
@@ -101,15 +103,15 @@
             </section>
             <section class="page__why why">
                 <div class="why__container">
-                    <div class="why__content content">
-                        <h5 class="content__sub-title">
+                    <div class="why__content">
+                        <h5 class="content__sub-title sub-title">
                             <svg>
                                 <use xlink:href="img/sprite.svg#eye"></use>
                             </svg>
                             <span>Why Qubly</span>
                         </h5>
-                        <h2 class="content__title">Get actionable insights from Big Data in 3 steps</h2>
-                        <div class="content__text">
+                        <h2 class="content__title title">Get actionable insights from Big Data in 3 steps</h2>
+                        <div class="content__text text">
                             <p>
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -164,15 +166,15 @@
             </section>
             <section class="page__product-team product-team">
                 <div class="product-team__container">
-                    <div class="product-team__content content">
-                        <h5 class="content__sub-title">
+                    <div class="product-team__content">
+                        <h5 class="product-team__sub-title sub-title">
                             <svg>
                                 <use xlink:href="img/sprite.svg#launch"></use>
                             </svg>
                             <span>For Product Teams</span>
                         </h5>
-                        <h2 class="content__title">Launch with the best stack</h2>
-                        <div class="content__text">
+                        <h2 class="product-team__title title">Launch with the best stack</h2>
+                        <div class="product-team__text text">
                             <p>
                                 A centralized platform that integrates zillions of data sources using Big Data ELT
                                 (Extract, Load & Transform) that leaves no data behind
@@ -182,22 +184,22 @@
                     <div class="product-team__image">
                         <picture>
                             <source srcset="img/product/Logos.webp" type="image/webp" />
-                            <img src="img/product/Logos.png" alt="hero" />
+                            <img src="img/product/Logos.png" alt="product" />
                         </picture>
                     </div>
                 </div>
             </section>
             <section class="page__engineering-team engineering-team">
                 <div class="engineering-team__container">
-                    <div class="engineering-team__content content">
-                        <h5 class="content__sub-title">
+                    <div class="engineering-team__content">
+                        <h5 class="engineering-team__sub-title sub-title">
                             <svg>
                                 <use xlink:href="img/sprite.svg#engineering"></use>
                             </svg>
                             <span>For Engineering Teams</span>
                         </h5>
-                        <h2 class="content__title">Data-driven pipelines in minutes</h2>
-                        <div class="content__text">
+                        <h2 class="engineering-team__title title">Data-driven pipelines in minutes</h2>
+                        <div class="engineering-team__text text">
                             <p>
                                 Maintenance-free data pipelines with quick set-up and straight-forward deployments that
                                 are powered by a modern & scalable platform.
@@ -207,17 +209,331 @@
                     <div class="engineering-team__image">
                         <picture>
                             <source srcset="img/engineer/01.webp" type="image/webp" />
-                            <img src="img/engineer/01.png" alt="hero" />
+                            <img src="img/engineer/01.png" alt="engineer" />
                         </picture>
                     </div>
                 </div>
             </section>
-        </main>
-        <footer class="footer">
-        </footer>
+            <div class="page__testimonial testimonial">
+                <!-- Slider main container -->
+                <div class="testimonial__container swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="testimonial__slider swiper-wrapper ">
+                        <!-- Slides -->
+                        <div class="swiper-slide testimonial__slide slide-testimonial">
+                            <q class="slide-testimonial__quote">
+                                "What I love about Qubly is the easy way we can collaborate
+                                even if there is a lot of people involved in the process"
+                            </q>
+                            <div class="slide-testimonial__image">
+                                <img src="img/quote/01.webp" alt="author">
+                            </div>
+                            <div class="slide-testimonial__body">
+                                <span class="slide-testimonial__name">Guillaume Cabane</span>
+                                <span class="slide-testimonial__post">
+                                    CTO @ BigSpring
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide slide-testimonial">
+                            <q class="slide-testimonial__quote">
+                                "What I love about Qubly is the easy way we can collaborate
+                                even if there is a lot of people involved in the process"
+                            </q>
+                            <div class="slide-testimonial__image">
+                                <img src="img/quote/01.webp" alt="author">
+                            </div>
+                            <div class="slide-testimonial__body">
+                                <span class="slide-testimonial__name">Guillaume Cabane</span>
+                                <span class="slide-testimonial__post">
+                                    CTO @ BigSpring
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide slide-testimonial">
+                            <q class="slide-testimonial__quote">
+                                "What I love about Qubly is the easy way we can collaborate
+                                even if there is a lot of people involved in the process"
+                            </q>
+                            <div class="slide-testimonial__image">
+                                <img src="img/quote/01.webp" alt="author">
+                            </div>
+                            <div class="slide-testimonial__body">
+                                <span class="slide-testimonial__name">Guillaume Cabane</span>
+                                <span class="slide-testimonial__post">
+                                    CTO @ BigSpring
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide slide-testimonial">
+                            <q class="slide-testimonial__quote">
+                                "What I love about Qubly is the easy way we can collaborate
+                                even if there is a lot of people involved in the process"
+                            </q>
+                            <div class="slide-testimonial__image">
+                                <img src="img/quote/01.webp" alt="author">
+                            </div>
+                            <div class="slide-testimonial__body">
+                                <span class="slide-testimonial__name">Guillaume Cabane</span>
+                                <span class="slide-testimonial__post">
+                                    CTO @ BigSpring
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide slide-testimonial">
+                            <q class="slide-testimonial__quote">
+                                "What I love about Qubly is the easy way we can collaborate
+                                even if there is a lot of people involved in the process"
+                            </q>
+                            <div class="slide-testimonial__image">
+                                <img src="img/quote/01.webp" alt="author">
+                            </div>
+                            <div class="slide-testimonial__body">
+                                <span class="slide-testimonial__name">Guillaume Cabane</span>
+                                <span class="slide-testimonial__post">
+                                    CTO @ BigSpring
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="testimonial__pagination">
+
+                    </div>
+                </div>
+            </div>
+            <section class="page__sign-up sign-up">
+                <div class="sign-up__container">
+                    <div class="sign-up__content">
+                        <h2 class="sign-up__title">
+                            See why the world’s best companies use Qubly to become truly
+                            data-driven.
+                        </h2>
+                        <span class="sign-up__border"><span>Trusted by</span></span>
+                        <div class="sign-up__items">
+                            <div class="sign-up__item item-sign-up">
+                                <div class="item-sign-up__image">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#accenture"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sign-up__item item-sign-up">
+                                <div class="item-sign-up__image">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#react"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sign-up__item item-sign-up">
+                                <div class="item-sign-up__image">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#airbnb"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sign-up__item item-sign-up">
+                                <div class="item-sign-up__image">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#sky"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sign-up__case">
+                        <form class="sign-up__form from-sign-up">
+                            <fieldset class="from-sign-up__fieldset">
+                                <h2 class="from-sign-up__title">Sign Up</h2>
+                                <button type="submit" class="from-sign-up__btn">Start your free trial</button>
+                                <input placeholder="Your primary email" name="form[]" type="email"
+                                    class="from-sign-up__input" required>
+                                <input placeholder="Password" name="form[]" type="password" class="from-sign-up__input"
+                                    required>
+                                <input placeholder="Re-type Password" name="form[]" s type="password"
+                                    class="from-sign-up__input" required>
+                            </fieldset>
+                            <span class="from-sign-up__text-border">OR</span>
+                            <a href="#" class="from-sign-up__google">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#google"></use>
+                                </svg>
+                                <span>Sign in with Google</span>
+                            </a>
+                            <!-- google sign in button -->
+                            <!-- <div id="my-signin2"></div> -->
+                            <div class="from-sign-up__login">
+                                Already have an account?
+                                <a href="#">Login</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
     </div>
-    <script src="js/script.js"></script>
+    </main>
+    <footer class="footer">
+        <div class="footer__top top-footer">
+            <div class="top-footer__container">
+                <div class="top-footer__content">
+                    <a href="#" class="top-footer__logo">
+                        <img src="img/header/logo.svg" alt="#">
+                    </a>
+                    <div class="top-footer__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat ut wisi enim ad minim
+                        </p>
+                    </div>
+                    <div class="top-footer__social social-top-header">
+                        <ul class="social-top-header__list">
+                            <li class="social-top-header__item">
+                                <a href="#" class="social-top-header__link">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-top-header__item">
+                                <a href="#" class="social-top-header__link">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-top-header__item">
+                                <a href="#" class="social-top-header__link">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-footer__column column-top-footer">
+                    <h4 class="column-top-footer__title">Product</h4>
+                    <div class="column-top-footer__panel">
+                        <ul class="column-top-footer__list">
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Connections</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Protocols</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Personas</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Integrations</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Catalog</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Pricing</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Security</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">GDPR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-footer__column column-top-footer">
+                    <h4 class="column-top-footer__title">For Developers</h4>
+                    <div class="column-top-footer__panel">
+                        <ul class="column-top-footer__list">
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Docs</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">API</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Open Source</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Engineering Team</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-footer__column column-top-footer">
+                    <h4 class="column-top-footer__title">Company</h4>
+                    <div class="column-top-footer__panel">
+                        <ul class="column-top-footer__list">
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Careers</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Blog</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-footer__column column-top-footer">
+                    <h4 class="column-top-footer__title">Support</h4>
+                    <div class="column-top-footer__panel">
+                        <ul class="column-top-footer__list">
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Help Center</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Contact Us</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Security</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Bulletins</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Documentation</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Partner</a>
+                            </li>
+                            <li class="column-top-footer__item">
+                                <a href="#" class="column-top-footer__link">Portal</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-footer__column column-top-footer">
+                    <h4 class="column-top-footer__title">Newsletter</h4>
+                    <form class="column-top-footer__form" action="#">
+                        <input class="column-top-footer__input" type="text" required placeholder="Email">
+                        <button class="column-top-footer__btn">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#submit"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__bottom bottom-footer">
+            <div class="bottom-footer__container">
+                <div class="bottom-footer__copiright">
+                    <span>Rahul Rao</span>
+                    <img src="img/footer/image 7.webp" alt="copyright">
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
     <script src="js/dynamic_adapt.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
