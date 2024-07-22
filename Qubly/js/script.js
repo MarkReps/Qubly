@@ -48,8 +48,8 @@ new Swiper('.swiper-container', {
     pagination: {
       el: '.testimonial__pagination',
       clickable:true,
-      bulletClass:".testimonial__item",
-      bulletActiveClass:".active",
+      bulletClass:"testimonial__item",
+      bulletActiveClass:"active",
       renderBullet: function (index, className) {
         return '<span class="' + className + '"><svg><use xlink:href="img/sprite.svg#'+company[index]+'"></use></svg></span>';
     },
@@ -57,21 +57,21 @@ new Swiper('.swiper-container', {
     
 })
 
-
-function onSuccess(googleUser) {
-    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-  }
-  function onFailure(error) {
-    console.log(error);
-  }
-  function renderButton() {
-    gapi.signin2.render('my-signin2', {
-      'scope': 'profile email',
-      'width': 240,
-      'height': 50,
-      'longtitle': true,
-      'theme': 'dark',
-      'onsuccess': onSuccess,
-      'onfailure': onFailure
-    });
-  }
+// google sign up
+// function onSuccess(googleUser) {
+//     console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+//   }
+//   function onFailure(error) {
+//     console.log(error);
+//   }
+//   function renderButton() {
+//     gapi.signin2.render('my-signin2', {
+//       'scope': 'profile email',
+//       'width': 240,
+//       'height': 50,
+//       'longtitle': true,
+//       'theme': 'dark',
+//       'onsuccess': onSuccess,
+//       'onfailure': onFailure
+//     });
+//   }

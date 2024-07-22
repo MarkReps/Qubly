@@ -707,7 +707,7 @@ body {
     padding-bottom: toRem(100);
     // .testimonial__container
     &__container {
-        overflow: hidden;
+        
         &::after{
             content: "";
             position: absolute;
@@ -723,7 +723,10 @@ body {
             background: linear-gradient(180deg, rgba(252,248,255,1) 0%, rgba(226,241,255,1) 100%);
         }
     }
-
+    // .testimonial__case
+    &__case{
+        overflow: hidden;
+    }
     // .testimonial__slider
     &__slider {
         padding-bottom: toRem(32);
@@ -742,36 +745,57 @@ body {
         align-items: center;
         justify-content: space-between;
         gap: toRem(20);
-        & > span{
-            height: toRem(50);   
-            width: toRem(150);
-            flex-shrink: 0;   
-        }
-        & > span.active{
-            svg{
-                fill: #722ed1;
-            }
-        }
-        svg{
-            height: toRem(50);   
-            width: toRem(150);
-            fill: #8989A2;
-        }
+        // & > span{
+        //     height: toRem(50);   
+        //     width: toRem(150);
+        //     flex-shrink: 0;   
+        // }
+        // & > span.active svg{
+        //     fill: #722ed1;
+        // }
+        // svg{
+        //     height: toRem(50);   
+        //     width: toRem(150);
+        //     fill: #8989A2;
+        // }
         
     }
     
     // .testimonial__item
     &__item {
-        // height: toRem(50);   
-        // width: toRem(150);
-        // flex-shrink: 0;
-        // svg{
-        //     width: 100%;
-        // }
-        .active{
-            font-size: 16px;
+        height: toRem(50);   
+        width: toRem(150);
+        overflow: hidden;
+        flex-shrink: 0;
+        @media (max-width:toEm(1023.98)) {
+            width: toRem(50);
+            overflow: hidden;
+        }
+        @media (max-width:toEm(450)) {
+            width: toRem(40);
+            height: toRem(40);
+        }
+        svg{
+            height: toRem(50);   
+            width: toRem(150);
+            @media (max-width:toEm(450)) {
+                width: toRem(120);
+                height: toRem(40);
+            }
+            fill: #8989A2;
+            transition: 0.3s ease;
+            
+        }
+        .svg-text{
+            fill:#101419;
+        }
+        
+        &.active {
             svg{
                 fill: #722ed1;
+                &.svg-text{
+                    fill:#101419;
+                }
             }
         }
     }

@@ -854,9 +854,6 @@ body {
   padding-top: 3.75rem;
   padding-bottom: 6.25rem;
 }
-.testimonial__container {
-  overflow: hidden;
-}
 .testimonial__container::after {
   content: "";
   position: absolute;
@@ -871,6 +868,9 @@ body {
   background: rgb(249, 240, 255);
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(252, 248, 255)), to(rgb(226, 241, 255)));
   background: linear-gradient(180deg, rgb(252, 248, 255) 0%, rgb(226, 241, 255) 100%);
+}
+.testimonial__case {
+  overflow: hidden;
 }
 .testimonial__slider {
   padding-bottom: 2rem;
@@ -890,25 +890,46 @@ body {
           justify-content: space-between;
   gap: 1.25rem;
 }
-.testimonial__pagination > span {
+.testimonial__item {
   height: 3.125rem;
   width: 9.375rem;
+  overflow: hidden;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-.testimonial__pagination > span.active svg {
-  fill: #722ed1;
+@media (max-width: 63.99875em) {
+  .testimonial__item {
+    width: 3.125rem;
+    overflow: hidden;
+  }
 }
-.testimonial__pagination svg {
+@media (max-width: 28.125em) {
+  .testimonial__item {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+.testimonial__item svg {
   height: 3.125rem;
   width: 9.375rem;
   fill: #8989A2;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-.testimonial__item .active {
-  font-size: 16px;
+@media (max-width: 28.125em) {
+  .testimonial__item svg {
+    width: 7.5rem;
+    height: 2.5rem;
+  }
 }
-.testimonial__item .active svg {
+.testimonial__item .svg-text {
+  fill: #101419;
+}
+.testimonial__item.active svg {
   fill: #722ed1;
+}
+.testimonial__item.active svg.svg-text {
+  fill: #101419;
 }
 
 .slide-testimonial {
